@@ -135,8 +135,6 @@ All built around the **LangChain framework**.
 
 **Soumya Sourav Das**
 
-B.Tech in Electrical Engineering, DTU
-
-Focus Areas: Generative AI, AI Agents, Autonomous Reasoning Systems
+Focus Areas of Repo: Generative AI, AI Agents, Autonomous Reasoning Systems
 
 ---
