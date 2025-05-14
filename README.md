@@ -134,7 +134,9 @@ All built around the **LangChain framework**.
 ## Author
 
 **Soumya Sourav Das**
+
 B.Tech in Electrical Engineering, DTU
+
 Focus Areas: Generative AI, AI Agents, Autonomous Reasoning Systems
 
 ---
