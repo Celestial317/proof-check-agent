@@ -1,0 +1,6 @@
+langchain==0.0.191
+langchain-google-genai==0.1.0
+langchain-community==0.0.1
+duckduckgo-search==0.3.0
+wikipedia-api==0.5.4
+python-dotenv==0.20.0
