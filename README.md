@@ -1,5 +1,3 @@
-Here's the updated and professional `README.md`, now including attribution to the LangChain framework:
-
 ---
 
 # Multi-Agent Truth & Reasoning Checker
