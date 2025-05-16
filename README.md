@@ -135,6 +135,7 @@ All built around the **LangChain framework**.
 
 **Soumya Sourav Das**
 
-Focus Areas of Repo: Generative AI, AI Agents, Autonomous Reasoning Systems
+[Portfolio](https://soumya-sourav-portfolio.vercel.app/) | [GitHub](https://github.com/Celestial317) | [LinkedIn](https://www.linkedin.com/in/soumyasouravdas/)
+
 
 ---
