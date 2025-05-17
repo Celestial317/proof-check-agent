@@ -4,6 +4,7 @@ from langchain.prompts import PromptTemplate
 from langchain.agents.agent_types import AgentType
 from langchain.agents import Tool, initialize_agent
 from langchain_community.tools import DuckDuckGoSearchRun, WikipediaQueryRun
+from langcahin_tavily import TavilySearch
 from langchain_community.utilities import WikipediaAPIWrapper
 from dotenv import load_dotenv
 import os
@@ -17,20 +18,11 @@ google_api_key = os.getenv("GOOGLE_API_KEY")
 llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key=google_api_key, temperature=0.0)
 
 
-search = DuckDuckGoSearchRun()
-def safe_run_search(query, retries=3, delay=2):
-    for _ in range(retries):
-        try:
-            return search.run(query)
-        except Exception as e:
-            print(f"Error during search: {e}")
-            print(f"Retrying in {delay} seconds...")
-            time.sleep(delay)
-    return None
-duckduck_tool = Tool.from_function(
-    name="DuckDuckGo",
-    func=safe_run_search,
-    description="Search the internet for real-time facts, news, statistics or events."
+search = TavilySearch(max_results = 5, topic = "general")
+search_tool = Tool.from_function(
+    name="Tavily",
+    func=search.run,
+    description="Use this to get real time data and facts from Web Scraping"
 )
 
 
