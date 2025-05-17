@@ -2,7 +2,7 @@
 
 # Multi-Agent Truth & Reasoning Checker
 
-A modular, domain-specific **validation system** built using the **LangChain framework**. It uses external knowledge sources like **Wikipedia** and **DuckDuckGo**, along with **LLM-powered tools**, to verify the correctness of statements in various domains — including math, factual knowledge, language, and code.
+A modular, domain-specific **validation system** built using the **LangChain framework**. It uses external knowledge sources like **Tavily Search**, **Wikipedia** and **DuckDuckGo**, along with **LLM-powered tools**, to verify the correctness of statements in various domains — including math, factual knowledge, language, and code.
 This system **does not generate new answers** — it only **checks** and **validates** existing statements for accuracy and soundness.
 
 ---
@@ -53,7 +53,7 @@ The agents work collaboratively, ensuring that the main agent can intelligently 
   Uses search-based heuristics to determine whether the claim is factual, mathematical, coding-related, or linguistic.
 
 * **Fact-Checker**
-  Queries Wikipedia and DuckDuckGo to validate real-world claims.
+  Queries Wikipedia and Tavily Search to validate real-world claims.
 
 * **Math Reasoning Checker**
   Uses `LLMMathChain` for numerical expression verification.
